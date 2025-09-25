@@ -16,7 +16,6 @@ def get_secret(key: str):
 
 # Simulated BigQuery Client
 def query_bigquery(query: str):
-    # Replace with mock or real BigQuery query logic
     print("Executing BigQuery query:", query)
     return [{"bug_id": "BUG-001", "summary": "Sample Bug", "priority": "High"}]
 
@@ -46,9 +45,7 @@ def write_to_sheet(sheet_name: str, data: List[dict]):
     for row in data:
         print(row)
 
-# ------------------------------
 # Main Report Logic
-# ------------------------------
 
 def generate_bug_report():
     print("Generating bug report...")
@@ -80,9 +77,7 @@ def generate_bug_report():
 
     print("Done.")
 
-# ------------------------------
 # Entry Point
-# ------------------------------
 
 if __name__ == "__main__":
     generate_bug_report()
